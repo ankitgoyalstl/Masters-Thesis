@@ -1,0 +1,23 @@
+
+\chapter{Conclusions and Future Work}
+\label{chapter:conclusion-and-future-work}
+A large number of curated biomedical databases available in the public domain provides an unprecedented opportunity to train natural language processing systems to comprehend biomedical publications. In this thesis, we describe an approach to two such information extraction tasks for the Catalog of Genome-Wide Association Studies (GWAS): extraction of tuples of the form {\it <stage, ethnicity>} and {\it <stage, sample size>} where stage refers to the specific experimental stage of the GWAS, ethnicity to the ethnic groups of populations involved, and size to the size of the population pool. Our approach uses convolutional neural networks to decipher the underlying structure in the source text and perform information extraction tasks.
+
+\section{Overall Conclusions}
+\label{section:overall-conclusions}
+The results show that our approach is effective and outperforms alternative conventional intensive feature-engineered approaches by reaching a F1 score of 0.85 for extracting relations of the form {\it <stage, ethnicity>} and 0.74 for relations of the type {\it <stage, size>}. The generality of our approach also leads us to conclude that they can be used for a variety of applications and specifically to the automated curation of biomedical databases.
+
+\section{Future Work}
+\label{section:future-work}
+Although the current results look promising and provide us with a better way for information extraction in comparison to current methods, there are couple of ways we can build on this work to further our work.
+
+\begin{itemize}
+    \item \emph{Extraction of other entities}:
+    We can further use these neural network model to extract other entities for the overall curation of the GWAS catalog like disease/traits, p-values, etc. This is serve as a single system to extract all the fields for the database and avoid us the hassle of using different models for different scenarios. 
+    
+    \item \emph{Extension to long tuple extraction}:
+    Currently we are extracting only pair of entries from the text for the curation of database which leads to multiple networks which needs to be independently trained and maintained. A better way could be to design a model which could directly extract the larger tuples like triplets of {\it <stage, ethnicity, sample size>}
+    
+    \item \emph{Annotation Quality}: 
+    One major restriction in current method is tagging of the candidate entries for the relation mentions in the text. If there is an inherent error in the tagger, then the neural network model won't be able to perform as desired. Collaborative work is being undertaken currently to merge these tagging systems with simple crowd-sourcing methods. 
+\end{itemize}

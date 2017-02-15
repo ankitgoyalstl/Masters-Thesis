@@ -1,0 +1,81 @@
+
+\title{
+Relation Extraction using Convolution Neural Networks\\ 
+for curation of GWAS catalog
+}
+
+\author{Ankit Goyal}
+\degreeyear{2016}
+
+\degreetitle{Master of Science}
+
+\field{Computer Science}
+\chair{Professor Chun-Nan Hsu}
+\cochair{Professor Julian McAuley}
+\othermembers{
+Professor Kamalika Chaudhuri\\
+}
+
+\numberofmembers{3}
+
+\begin{frontmatter}
+
+\makefrontmatter
+
+\begin{dedication}
+{\it I dedicate this thesis to my family and friends, without whom this thesis or a master's degree would not have been possible. Their patience and support have been the most valuable contributions to my course.}
+\end{dedication}
+
+\begin{epigraph}
+{\it The scientists of today think deeply instead of clearly. \\
+One must be sane to think clearly, but one can think deeply and be quite insane.} \\
+\vspace{0.2in}
+\textup{--Nikola Tesla}
+\end{epigraph}
+
+\tableofcontents
+\listoffigures  
+\listoftables  
+
+\begin{acknowledgements}
+ 
+I would like to thank my advisor Professor Chun-Nan Hsu for his constant and invaluable advice and support throughout my masters degree and thesis work. His immense knowledge and guidance helped me in conducting research and in the writing of this thesis. 
+
+Besides my advisor, I would like to thank my thesis committee members, Professor Julian McAuley and Professor Kamalika Chaudhuri, for taking out time to review my work and for their valuable comments. 
+
+This work was supported by the National Human Genome Research Institute (NHGRI) of the National Institutes of Health (NIH) under award number U01HG006894.
+
+The work in Section \ref{section:pdf-to-xml-conversion} is a reprint of the material as it appears in ``Natural Language Processing using Kepler Workflow System: First Steps'' in Procedia Computer Science, Vol. 80. I am thankful to my co-authors Alok Singh, Shitij Bhargava, Daniel Crawl, Ilkay Altintas, and Chun-Nan Hsu for their inputs and support during the research work. The thesis author was the primary investigator and author of this paper. 
+
+Material from Chapter \ref{chapter:data-preprocessing}, \ref{chapter:neural-network-learning}, and \ref{chapter:experiments-and-results} in part is currently being prepared for submission for the publication of material. The thesis author was the primary investigator and author of this material. 
+
+\end{acknowledgements}
+
+\begin{vitapage}
+    \begin{vita}
+        \item[1991]Born in Gwalior, India
+        
+        \item[2008-2012]B.Tech., Computer Science and Engineering, \\
+        Indian Institute of Technology, Jodhpur, India
+        
+        \item[2012-2015]Software Development Engineer, \\
+        Microsoft Corporation, Hyderabad, India
+        
+        \item[2015-2017]M.S., Computer Science,\\
+        University of California, San Diego, USA
+    \end{vita}
+    
+    \begin{publications}
+        \item \textbf{Ankit Goyal}, Alok Singh, Shitij Bhargava, Daniel Crawl, Ilkay Altintas, and Chun-Nan Hsu. ``Natural Language Processing using Kepler Workflow System: First Steps.'' {\it Procedia Computer Science} 80 (2016): 712-721.
+        
+        \item \textbf{Ankit Goyal} and Chun-Nan Hsu. ``Relation Extraction from Biomedical Texts using Convolution Neural Networks'' {\it SoCal Machine Learning Symposium}. Poster Presentation - 2016
+    \end{publications}
+\end{vitapage}
+
+\begin{abstract}
+A crucial area of Natural Language Processing is information extraction, the study of the identification and extraction of concepts of interest (``genes'', ``diseases'', etc.). This thesis proposes algorithms that extract relational information from biomedical text using machine learning techniques. In particular, the work presented here concerns with the identification of entity mentions from the given text which exhibits a semantic relationship among them and extraction of these entities for the curation of biomedical databases. One such database is the Genome-Wide Association Study (GWAS) catalog which is manually curated, literature-derived collection of all GWAS and is the center of our work. 
+
+This work presents a machine learning approach to natural language processing to automatically extract the information of GWAS catalog from a new biomedical text. We focus on characteristics of the population samples used in the experiments i.e. the experimental stage, the ethnicity groups of individuals and the size of the population pool. Our approach for relation extraction is based on convolutional neural networks with different filter sizes using already curated data from existing biomedical databases as training examples. Although these neural networks have been previously used for relation extraction and other natural language processing tasks, to the best of my knowledge they have never been applied to the problem of automatic data curation, and we focus primarily on developing a learning framework to deal with this issue specifically. We evaluated our approach by extracting the sample characteristics as tuple relations and achieved an improvement over the existing approach. Our neural network models were able to outperform an approach developed previously for the same task as a baseline.  
+\end{abstract}
+
+\end{frontmatter}

@@ -1,0 +1,56 @@
+%% ---------------------------------------- %%
+%%           UCSD Masters' Thesis           %%
+%% ---------------------------------------- %%
+
+\documentclass[chapterheads]{ucsd}
+
+\usepackage[T1]{fontenc}                %% Font Encoding Package
+\usepackage{mathptmx}                   %% Math Font Glyphs Package 
+
+\usepackage{amsfonts}               
+\usepackage{amsmath}
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{booktabs}
+
+\usepackage{graphicx}                   %% Import Images Package
+\usepackage{afterpage}
+
+\usepackage{caption}                    %% Caption Package
+\captionsetup{font=footnotesize}        %% Reduce Caption Size
+
+\begin{document}
+
+%% ----------------------------------------- %%
+%% Front Pages
+\include{FrontPages}
+
+%% ----------------------------------------- %%
+%% Chapter 1 - Introduction
+\include{Chapter1}
+
+%% ----------------------------------------- %%
+%% Chapter 2 - Neural Network Framework
+\include{Chapter2}
+
+%% ----------------------------------------- %%
+%% Chapter 3 - Data Preprocessing
+\include{Chapter3}
+
+%% ----------------------------------------- %%
+%% Chapter 4 - Experiments and Results
+\include{Chapter4}
+
+%% ----------------------------------------- %%
+%% Chapter 5 - Conclusion and Future Work
+\include{Chapter5}
+
+%% ----------------------------------------- %%
+%% Bibliography
+\bibliographystyle{plain}
+\bibliography{Bibliography}
+\nocite{*}
+
+\end{document}
+
